@@ -1,0 +1,32 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="schedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:short" name="year"/>
+        <xs:element type="xs:string" name="semester"/>
+        <xs:element name="course" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="program"/>
+              <xs:element type="xs:short" name="number"/>
+              <xs:element type="xs:string" name="title"/>
+              <xs:element type="xs:byte" name="credits"/>
+              <xs:element name="section" maxOccurs="unbounded" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="instructor"/>
+                    <xs:element type="xs:byte" name="sectionNumber"/>
+                    <xs:element type="xs:string" name="room"/>
+                    <xs:element type="xs:string" name="days"/>
+                    <xs:element type="xs:string" name="startTime"/>
+                    <xs:element type="xs:string" name="endTime"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

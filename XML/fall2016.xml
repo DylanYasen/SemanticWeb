@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./shedule.xsl"?>
+<schedule
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="./schedule.xsd"
+  >
+  <year>2016</year>
+  <semester>Fall</semester>
+
+  <course>
+    <program>CMSC</program>
+    <number>304</number>
+    <title>CMSC 304 - Social and Ethical Issues in Information Technology</title>
+    <credits>3</credits>
+    <section>
+        <instructor>Paul Heiss</instructor>
+        <sectionNumber>01</sectionNumber>
+        <room>Engineering 231</room>
+        <days>MoWe</days>
+        <startTime>5:30pm</startTime>
+        <endTime>6:45pm</endTime>
+    </section>
+    <section>
+        <instructor>Jeremy Dixon</instructor>
+        <sectionNumber>02</sectionNumber>
+        <room>Information Technology 233</room>
+        <days>TuTh</days>
+        <startTime>10:00am</startTime>
+        <endTime>11:15am</endTime>
+    </section>
+    <section>
+        <instructor>Kimberly Bonnette</instructor>
+        <sectionNumber>04</sectionNumber>
+        <room>Performing Arts 107</room>
+        <days>TuTh</days>
+        <startTime>5:30pm</startTime>
+        <endTime>6:45pm</endTime>
+    </section>
+
+  </course>
+
+  <course>
+    <program>CMSC</program>
+    <number>441</number>
+    <title>CMSC 441 - Design and Analysis of Algorithms</title>
+    <credits>3</credits>
+    <section>
+        <instructor>Alan Sherman</instructor>
+        <sectionNumber>01</sectionNumber>
+        <room>Information Technology 227</room>
+        <days>MoWeFr</days>
+        <startTime>10:00am</startTime>
+        <endTime>10:50am</endTime>
+    </section>
+    <section>
+        <instructor>Christopher Marron</instructor>
+        <sectionNumber>02</sectionNumber>
+        <room>Sherman Hall 150</room>
+        <days>TuTh</days>
+        <startTime>10:00am</startTime>
+        <endTime>11:15am</endTime>
+    </section>
+    <section>
+        <instructor>Christopher Marron</instructor>
+        <sectionNumber>03</sectionNumber>
+        <room>Information Technology 227</room>
+        <days>TuTh</days>
+        <startTime>1:00pm</startTime>
+        <endTime>2:15pm</endTime>
+    </section>
+  </course>
+
+  <course>
+    <program>CMSC</program>
+    <number>491</number>
+    <title>CMSC 491 - Special Topics in Computer Science</title>
+    <credits>3</credits>
+    <section>
+      <instructor>Timothy Finin</instructor>
+      <sectionNumber>01</sectionNumber>
+      <room>Math Psychology 101</room>
+      <days>MoWe</days>
+      <startTime>4:00pm</startTime>
+      <endTime>5:15pm</endTime>
+    </section>
+    <section>
+      <instructor>James Oates</instructor>
+      <sectionNumber>02</sectionNumber>
+      <room>Administration 101</room>
+      <days>TuTh</days>
+      <startTime>2:30pm</startTime>
+      <endTime>3:45pm</endTime>
+    </section>
+  </course>
+
+</schedule>
