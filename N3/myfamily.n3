@@ -1,0 +1,77 @@
+@prefix : <#> .
+@prefix gc: <http://www.daml.org/2001/01/gedcom/gedcom#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+:fam1 a gc:Family.
+
+:Loli gc:sex gc:Female;
+  gc:givenName "Loli";
+  gc:age :70;
+  gc:grandchild :Yadi;
+  gc:grandchild :Tian;
+  gc:grandchild :Yolanda;
+  gc:spouse :Popi;
+  gc:child :Dylan .
+
+:Popi gc:sex gc:Male;
+  gc:givenName "Popi";
+  gc:age :70;
+  gc:grandchild :Yadi;
+  gc:grandchild :Tian;
+  gc:grandchild :Yolanda;
+  gc:spouse :Loli;
+  gc:child :Dylan .
+
+:Dylan gc:sex gc:Male;
+  gc:givenName "Dylan";
+  gc:age :50;
+  gc:spouse :Guli;
+  gc:spouseIn :fam1 .
+
+:Guli gc:sex gc:Female;
+  gc:givenName "Guli";
+  gc:age :49;
+  gc:spouse :Dylan;
+  gc:spouseIn :fam1 .
+
+:Yadi gc:sex gc:Male;
+  gc:givenName "Yadi";
+  gc:age :22;
+  gc:sibling :Yolanda;
+  gc:sibling :Tian;
+  gc:grandparent :Loli;
+  gc:grandparent :Popi;
+  gc:childIn :fam1 .
+
+:Tian gc:sex gc:Female;
+  gc:givenName "Tian";
+  gc:age :20;
+  gc:sibling :Yadi;
+  gc:sibling :Yolanda;
+  gc:grandparent :Loli;
+  gc:grandparent :Popi;
+  gc:childIn :fam1 .
+
+:Yolanda gc:sex gc:Female;
+  gc:givenName "Yolanda";
+  gc:age :21;
+  gc:sibling :Tian;
+  gc:sibling :Yadi;
+  gc:grandparent :Loli;
+  gc:grandparent :Popi;
+  gc:childIn :fam1 .
+
+:Mali gc:sex gc:Male;
+  gc:givenName "Mali";
+  gc:age :40;
+  gc:sibling :Dylan .
+
+:Sofia gc:sex gc:Female;
+  gc:givenName "Sofia";
+  gc:age :39;
+  gc:brother :Dylan .
+
+:Julia gc:sex gc:Female;
+  gc:givenName "Julia";
+  gc:age :19;
+  gc:mother :Sofia .

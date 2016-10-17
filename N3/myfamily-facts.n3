@@ -1,0 +1,294 @@
+#Processed by Id: cwm.py,v 1.197 2007/12/13 15:38:39 syosi Exp 
+        #    using base file:///Users/Yadikaer/Projects/SemanticWeb/N3/myfamily.n3
+
+#  Notation3 generation by
+#       notation3.py,v 1.200 2007/12/11 21:18:08 syosi Exp
+
+#   Base was: file:///Users/Yadikaer/Projects/SemanticWeb/N3/myfamily.n3
+     @prefix : <#> .
+    @prefix foaf: <http://xmlns.com/foaf/spec/#> .
+    @prefix gc: <http://www.daml.org/2001/01/gedcom/gedcom#> .
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+    "Dylan"     a rdfs:Resource .
+
+    "Guli"     a rdfs:Resource .
+
+    "Julia"     a rdfs:Resource .
+
+    "Loli"     a rdfs:Resource .
+
+    "Mali"     a rdfs:Resource .
+
+    "Popi"     a rdfs:Resource .
+
+    "Sofia"     a rdfs:Resource .
+
+    "Tian"     a rdfs:Resource .
+
+    "Yadi"     a rdfs:Resource .
+
+    "Yolanda"     a rdfs:Resource .
+
+    rdf:type     a rdf:Property,
+                rdfs:Resource .
+
+    :19     a rdfs:Resource .
+
+    :20     a rdfs:Resource .
+
+    :21     a rdfs:Resource .
+
+    :22     a rdfs:Resource .
+
+    :39     a rdfs:Resource .
+
+    :40     a rdfs:Resource .
+
+    :49     a rdfs:Resource .
+
+    :50     a rdfs:Resource .
+
+    :70     a rdfs:Resource .
+
+    :Dylan     a rdfs:Resource;
+         gc:age :50;
+         gc:daughter :Tian,
+                :Yolanda;
+         gc:givenName "Dylan";
+         gc:sex gc:Male;
+         gc:son :Yadi;
+         gc:spouse :Guli;
+         gc:spouseIn :fam1;
+         gc:wife :Guli;
+         foaf:knows :Guli .
+
+    :Guli     a rdfs:Resource;
+         gc:age :49;
+         gc:daughter :Tian,
+                :Yolanda;
+         gc:givenName "Guli";
+         gc:husband :Dylan;
+         gc:sex gc:Female;
+         gc:son :Yadi;
+         gc:spouse :Dylan;
+         gc:spouseIn :fam1;
+         foaf:knows :Dylan .
+
+    :Julia     a rdfs:Resource;
+         gc:age :19;
+         gc:givenName "Julia";
+         gc:mother :Sofia;
+         gc:sex gc:Female .
+
+    :Loli     a rdfs:Resource;
+         gc:age :70;
+         gc:child :Dylan;
+         gc:givenName "Loli";
+         gc:grandchild :Tian,
+                :Yadi,
+                :Yolanda;
+         gc:granddaughter :Tian,
+                :Yolanda;
+         gc:grandson :Yadi;
+         gc:husband :Popi;
+         gc:sex gc:Female;
+         gc:spouse :Popi;
+         foaf:knows :Dylan,
+                :Popi,
+                :Tian,
+                :Yadi,
+                :Yolanda .
+
+    :Mali     a rdfs:Resource;
+         gc:age :40;
+         gc:brother :Dylan;
+         gc:givenName "Mali";
+         gc:sex gc:Male;
+         gc:sibling :Dylan;
+         foaf:knows :Dylan .
+
+    :Popi     a rdfs:Resource;
+         gc:age :70;
+         gc:child :Dylan;
+         gc:givenName "Popi";
+         gc:grandchild :Tian,
+                :Yadi,
+                :Yolanda;
+         gc:granddaughter :Tian,
+                :Yolanda;
+         gc:grandson :Yadi;
+         gc:sex gc:Male;
+         gc:spouse :Loli;
+         gc:wife :Loli;
+         foaf:knows :Dylan,
+                :Loli,
+                :Tian,
+                :Yadi,
+                :Yolanda .
+
+    :Sofia     a rdfs:Resource;
+         gc:age :39;
+         gc:brother :Dylan;
+         gc:givenName "Sofia";
+         gc:sex gc:Female .
+
+    :Tian     a rdfs:Resource;
+         gc:age :20;
+         gc:brother :Yadi;
+         gc:childIn :fam1;
+         gc:father :Dylan;
+         gc:givenName "Tian";
+         gc:grandfather :Popi;
+         gc:grandmother :Loli;
+         gc:grandparent :Loli,
+                :Popi;
+         gc:mother :Guli;
+         gc:parent :Dylan,
+                :Guli;
+         gc:sex gc:Female;
+         gc:sibling :Yadi,
+                :Yolanda;
+         gc:sister :Yolanda;
+         foaf:knows :Dylan,
+                :Guli,
+                :Loli,
+                :Popi,
+                :Yadi,
+                :Yolanda .
+
+    :Yadi     a rdfs:Resource;
+         gc:age :22;
+         gc:childIn :fam1;
+         gc:father :Dylan;
+         gc:givenName "Yadi";
+         gc:grandfather :Popi;
+         gc:grandmother :Loli;
+         gc:grandparent :Loli,
+                :Popi;
+         gc:mother :Guli;
+         gc:parent :Dylan,
+                :Guli;
+         gc:sex gc:Male;
+         gc:sibling :Tian,
+                :Yolanda;
+         gc:sister :Tian,
+                :Yolanda;
+         foaf:knows :Dylan,
+                :Guli,
+                :Loli,
+                :Popi,
+                :Tian,
+                :Yolanda .
+
+    :Yolanda     a rdfs:Resource;
+         gc:age :21;
+         gc:brother :Yadi;
+         gc:childIn :fam1;
+         gc:father :Dylan;
+         gc:givenName "Yolanda";
+         gc:grandfather :Popi;
+         gc:grandmother :Loli;
+         gc:grandparent :Loli,
+                :Popi;
+         gc:mother :Guli;
+         gc:parent :Dylan,
+                :Guli;
+         gc:sex gc:Female;
+         gc:sibling :Tian,
+                :Yadi;
+         gc:sister :Tian;
+         foaf:knows :Dylan,
+                :Guli,
+                :Loli,
+                :Popi,
+                :Tian,
+                :Yadi .
+
+    :fam1     a gc:Family,
+                rdfs:Resource .
+
+    gc:Family     a rdfs:Resource .
+
+    gc:Female     a rdfs:Resource .
+
+    gc:Male     a rdfs:Resource .
+
+    gc:age     a rdf:Property,
+                rdfs:Resource .
+
+    gc:brother     a rdf:Property,
+                rdfs:Resource .
+
+    gc:child     a rdf:Property,
+                rdfs:Resource .
+
+    gc:childIn     a rdf:Property,
+                rdfs:Resource .
+
+    gc:daughter     a rdf:Property,
+                rdfs:Resource .
+
+    gc:father     a rdf:Property,
+                rdfs:Resource .
+
+    gc:givenName     a rdf:Property,
+                rdfs:Resource .
+
+    gc:grandchild     a rdf:Property,
+                rdfs:Resource .
+
+    gc:granddaughter     a rdf:Property,
+                rdfs:Resource .
+
+    gc:grandfather     a rdf:Property,
+                rdfs:Resource .
+
+    gc:grandmother     a rdf:Property,
+                rdfs:Resource .
+
+    gc:grandparent     a rdf:Property,
+                rdfs:Resource .
+
+    gc:grandson     a rdf:Property,
+                rdfs:Resource .
+
+    gc:husband     a rdf:Property,
+                rdfs:Resource .
+
+    gc:mother     a rdf:Property,
+                rdfs:Resource .
+
+    gc:parent     a rdf:Property,
+                rdfs:Resource .
+
+    gc:sex     a rdf:Property,
+                rdfs:Resource .
+
+    gc:sibling     a rdf:Property,
+                rdfs:Resource .
+
+    gc:sister     a rdf:Property,
+                rdfs:Resource .
+
+    gc:son     a rdf:Property,
+                rdfs:Resource .
+
+    gc:spouse     a rdf:Property,
+                rdfs:Resource .
+
+    gc:spouseIn     a rdf:Property,
+                rdfs:Resource .
+
+    gc:wife     a rdf:Property,
+                rdfs:Resource .
+
+    rdf:Property     a rdfs:Resource .
+
+    rdfs:Resource     a rdfs:Resource .
+
+    foaf:knows     a rdf:Property,
+                rdfs:Resource .
+
+#ENDS
